@@ -30,4 +30,19 @@ header {
       }
     }
   }
+
+  @include responsive(600px) {
+    .container {
+      justify-content: center;
+    }
+    nav {
+      display: none;
+    }
+  }
+  @include responsive(480px) {
+    height: 8rem;
+    .logo {
+      max-width: 14rem;
+    }
+  }
 }

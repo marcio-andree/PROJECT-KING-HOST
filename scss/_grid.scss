@@ -1,0 +1,9 @@
+// como vai ter 15px de padding em cada lado é necessário somar 30px ao max-width
+// porque senão nossa grid fica menor do que 1216px
+// esse padding é necessário para ter um respiro nas laterais quando for fazer o responsivo
+.container{
+  width: 100%;
+  max-width: 124.6rem;
+  padding: 0 1.5rem ;
+  margin: 0 auto;
+}

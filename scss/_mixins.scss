@@ -1,3 +1,4 @@
+// patter responsive
 @mixin responsive($screenWidth){
 
   @media(max-width:$screenWidth){
@@ -5,9 +6,11 @@
   }
 
 }
+
 // para uma texto dentro da tag a que vai ser uma botão
 // ficar centralizado o heigth tem que ter a mesma altura do line-height
 
+//patter button
 @mixin style-btn($heigth, $bg, $colorText){
   display: inline-block;
   height: $heigth;
@@ -24,4 +27,12 @@
     color: $bg;
   }
 
+}
+
+//patter flexbox
+@mixin flex($direction, $align, $justify){
+  display: flex;
+  flex-direction:$direction ;
+  align-items:$align ;
+  justify-content: $justify ;
 }

@@ -1,48 +1,46 @@
 // quando header está com position fixed
 // a sessão a baixo dela tem que ter um margin top porque senão o conteudo
 // fica por dentro do topo impossibilitando ser vizualizado
-.s-hero{
+.s-hero {
   margin-top: 11.9rem;
   padding-top: 3.9rem;
   background-color: $purple;
-  .container{
-    @include flex(row, flex-start, space-between)
+  .container {
+    @include flex(row, flex-start, space-between);
   }
-  .text{
+  .text {
     width: 100%;
     max-width: 55rem;
-    h1{
-      font-family: 'Pt Sans', sans-serif;
+    h1 {
+      font-family: "Pt Sans", sans-serif;
       font-weight: bold;
       font-size: 4.8rem;
       line-height: 120%;
       color: $white;
       margin-bottom: 1.6rem;
     }
-    p{
+    p {
       font-size: 1.8rem;
       line-height: 150%;
       color: $white;
       max-width: 48.8rem;
       margin-bottom: 3.2rem;
     }
-    button{
-      @include style-btn(5.4rem, $yellow, #573991) ;
+    button {
+      @include style-btn(5.4rem, $yellow, #573991);
       margin-bottom: 8.6rem;
-
     }
-    .conheca{
+    .conheca {
       display: flex;
       align-items: center;
-      .icon{
+      .icon {
         @include flex(row, center, center);
         width: 4.2rem;
         height: 4.2rem;
-        background-color: rgba(123, 90, 186,0.4);
+        background-color: rgba(123, 90, 186, 0.4);
         border-radius: 0.6rem;
-
       }
-      span{
+      span {
         font-weight: bold;
         font-size: 1.6rem;
         line-height: 1.9rem;
@@ -51,8 +49,55 @@
       }
     }
   }
-  .image{
+  .image {
     position: relative;
-    top:3.4rem ;
+    top: 3.4rem;
+  }
+  @include responsive(991px) {
+    .container {
+      flex-direction: column;
+    }
+    .text {
+      max-width: 100%;
+      margin-bottom: 3rem;
+      h1 {
+        text-align: center;
+      }
+      p {
+        max-width: 100%;
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+      }
+      .conheca {
+        justify-content: center;
+      }
+    }
+  }
+
+  @include responsive(600px) {
+    padding-top: 2.5rem;
+    margin-top: 8rem;
+    .text {
+      h1 {
+        font-size: 4.3rem;
+      }
+    }
+    .image {
+      left: -0.9rem;
+    }
+  }
+  @include responsive(480px) {
+    .text {
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+        padding: 0 2rem;
+      }
+    }
   }
 }

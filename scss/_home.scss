@@ -101,3 +101,78 @@
     }
   }
 }
+
+.s-resources {
+  padding-top: 14.9rem;
+  padding-bottom: 9.9rem;
+
+  .top {
+    margin-bottom: 53px;
+    @include flex(row, center, space-between);
+    h2 {
+      font-family: "PT sans", sans-serif;
+      font-weight: bold;
+      font-size: 3.5rem;
+      line-height: 130%;
+      color: $gray-01;
+      max-width: 50.2rem;
+    }
+    p {
+      font-weight: 500;
+      font-size: 1.6rem;
+      color: $gray-02;
+    }
+  }
+  .content {
+    @include flex(row, flex-start, space-between);
+    .icon {
+      @include flex(row, center, center);
+      margin-bottom: 3rem;
+      width: 6.4rem;
+      height: 6.4rem;
+      background-color: rgba(197, 190, 220, 0.1);
+      border-radius: 1.2rem;
+    }
+    .info{
+      max-width: 23.9rem;
+      h4{
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        color: $purple;
+        margin-bottom: 2rem;
+      }
+      p{
+        font-size: 1.6rem;
+        line-height: 165%;
+        color: $gray-02;
+
+      }
+    }
+    .card-feactured{
+      width: 100%;
+      max-width: 28rem;
+      height: 32.3rem;
+      background-color: rgba(197, 190, 220, 0.1);
+      border-radius: 1.2rem;
+      padding-top: 4.1rem;
+      padding-left: 4.2rem;
+      .icon{
+        background-color: $white;
+      }
+      .info{
+        max-width: 20.4rem;
+      }
+
+    }
+    ul {
+      width: 100%;
+      max-width: 90.4rem;
+      margin-top:4.1rem;
+      padding-bottom: 6.5rem;
+      padding-left: 2rem;
+      @include flex(row, flex-start, space-between);
+      border-bottom: 3px solid rgba(95,60,161,0.1) ;
+    }
+  }
+}
